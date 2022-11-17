@@ -1,0 +1,47 @@
+/*myColors*/
+.title span {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: baseline;
+  font-variant: small-caps;
+  letter-spacing: 0.25em;
+}
+.title span .head {
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 0.5em;
+}
+.title span nav {
+  justify-self: start;
+  font-variant: none;
+}
+.title span nav select {
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  color: rgba(122, 200, 204, 0.8705882353);
+  background-color: #0b2c40;
+}
+.title .tabs {
+  width: 25%;
+  color: rgba(122, 200, 204, 0.8705882353);
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  font-variant: small-caps;
+}
+.title .tabs .selected {
+  cursor: pointer;
+  text-underline-offset: 0.5em;
+  text-shadow: 0.2px 0.2px 1px rgba(122, 200, 204, 0.8705882353);
+  font-weight: 550;
+  letter-spacing: 3px;
+  transition: all 550ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.14, 1.18);
+}
+.title .tabs .unselected {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 550ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.14, 1.18);
+}/*# sourceMappingURL=Title.css.map */

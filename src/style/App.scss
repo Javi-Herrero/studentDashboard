@@ -1,0 +1,48 @@
+@import'colors';
+
+html {
+    background-color: $backgoundApp;
+
+    ::selection {
+        background-color: $hippie-blue;
+    }
+
+    a {
+        color: $link;
+
+        &:visited {
+            color: $link;
+        }
+    }
+}
+
+.App {
+    scroll-behavior: smooth;
+    margin: 0;
+    color: $text;
+    background-color: $backgoundApp;
+    height: auto;
+
+
+    .dataVisualisation {
+        margin-bottom: 5vh;
+        padding: 0 2vh 2vh 2vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 410px auto;
+        gap: 18px;
+        grid-template-areas:
+
+            'header header '
+            'graphMain graphMain '
+            'graphStudent graphStudent';
+
+        hr {
+            border: .5px solid $lightMarks;
+        }
+
+        .header {
+            grid-area: header;
+        }
+    }
+}

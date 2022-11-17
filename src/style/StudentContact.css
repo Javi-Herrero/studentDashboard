@@ -1,0 +1,68 @@
+/*myColors*/
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.studentInfoMain {
+  position: relative;
+  top: -5%;
+  left: 15%;
+  background-color: #0b2c40;
+  width: 80%;
+  padding-top: 5%;
+  -webkit-animation: 500ms ease-out 0s 1 slideInFromLeft;
+          animation: 500ms ease-out 0s 1 slideInFromLeft;
+}
+.studentInfoMain .studentpic {
+  text-align: center;
+}
+.studentInfoMain .studentpic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15%;
+}
+.studentInfoMain .studentpic h3 {
+  display: inline;
+}
+.studentInfoMain .studentpic hr {
+  width: 60%;
+}
+.studentInfoMain .icontainer {
+  cursor: pointer;
+  height: 45px;
+}
+.studentInfoMain .icontainer div {
+  text-align: center;
+  pointer-events: none;
+}
+.studentInfoMain .icontainer div i {
+  transform: translateY(0px);
+  opacity: 1;
+  transition: transform 250ms, opacity 500ms;
+}
+.studentInfoMain .icontainer div p {
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: transform 250ms, opacity 500ms;
+}
+.studentInfoMain .icontainer div.active i {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+.studentInfoMain .icontainer div.active p {
+  transform: translateY(-30px);
+  opacity: 1;
+}/*# sourceMappingURL=StudentContact.css.map */

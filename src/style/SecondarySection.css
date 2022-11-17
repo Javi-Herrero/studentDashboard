@@ -1,0 +1,112 @@
+/*myColors*/
+div .fadeOut {
+  height: 0%;
+  opacity: 0;
+  transition: opacity 350ms, height 500ms;
+}
+
+.SecondarySectionHidden {
+  opacity: 0;
+  height: 0%;
+  position: absolute;
+  top: -100%;
+  transition: height 500ms, opacity 500ms;
+}
+.SecondarySectionHidden .graphAndCircleContainer {
+  height: 65%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "ch nmb" "bar bar";
+  align-items: start;
+  padding: 2%;
+}
+.SecondarySectionHidden .graphAndCircleContainer .pieChart {
+  height: 65%;
+  grid-area: ch;
+}
+.SecondarySectionHidden .graphAndCircleContainer .pieChart .label {
+  letter-spacing: 5px;
+  word-spacing: 35vh;
+  font-variant: small-caps;
+}
+.SecondarySectionHidden .graphAndCircleContainer .circleContainer {
+  justify-self: start;
+  grid-area: nmb;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: start;
+  gap: 10%;
+  justify-content: center;
+}
+.SecondarySectionHidden .graphAndCircleContainer .secondaryBarChart {
+  height: 250px;
+  margin-top: 5%;
+  grid-area: bar;
+}
+
+.SecondarySection {
+  position: relative;
+  opacity: 1;
+  height: 100%;
+  padding: 10px;
+  background-color: #031e2d;
+  grid-area: graphStudent;
+  transition: height 1500ms, opacity 2500ms;
+}
+.SecondarySection .graphAndCircleContainer {
+  height: 65%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "ch nmb" "bar bar";
+  align-items: start;
+}
+.SecondarySection .graphAndCircleContainer .pieChart {
+  position: relative;
+  width: auto;
+  height: auto;
+  margin: 2%;
+  grid-area: ch;
+}
+.SecondarySection .graphAndCircleContainer .pieChart .label1 {
+  color: rgba(122, 200, 204, 0.8705882353);
+  margin: 0;
+  position: absolute;
+  left: 32%;
+  top: 180px;
+  letter-spacing: 5px;
+  word-spacing: 35vh;
+  font-variant: small-caps;
+}
+.SecondarySection .graphAndCircleContainer .pieChart .label2 {
+  color: rgba(122, 200, 204, 0.8705882353);
+  margin: 0;
+  position: absolute;
+  left: 68%;
+  top: 180px;
+  letter-spacing: 5px;
+  word-spacing: 35vh;
+  font-variant: small-caps;
+}
+.SecondarySection .graphAndCircleContainer .pieChart .description {
+  margin-top: 0;
+  letter-spacing: 2.5px;
+}
+.SecondarySection .graphAndCircleContainer .circleContainer {
+  justify-self: center;
+  grid-area: nmb;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: start;
+  gap: 10%;
+  justify-content: center;
+}
+.SecondarySection .graphAndCircleContainer .secondaryBarChart {
+  height: 250px;
+  grid-area: bar;
+}
+.SecondarySection .graphAndCircleContainer .secondaryBarChart .description {
+  letter-spacing: 2.5px;
+  margin-left: 16px;
+}/*# sourceMappingURL=secondarySection.css.map */

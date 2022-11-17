@@ -1,0 +1,28 @@
+@import'colors';
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+
+    }
+}
+
+.about {
+    grid-area: graphMain;
+    height: fit-content;
+    margin-bottom: 50vh;
+    padding: 10px 10px 10px 10px;
+    animation: fade 1550ms;
+
+    .gap {
+        margin: 2% -10px -10px -10px;
+        height: 5vh;
+        background-color: $backgoundApp ;
+    }
+}

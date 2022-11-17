@@ -1,0 +1,32 @@
+/*myColors*/
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.about {
+  grid-area: graphMain;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 50vh;
+  padding: 10px 10px 10px 10px;
+  -webkit-animation: fade 1550ms;
+          animation: fade 1550ms;
+}
+.about .gap {
+  margin: 2% -10px -10px -10px;
+  height: 5vh;
+  background-color: #0b2c40;
+}/*# sourceMappingURL=About.css.map */

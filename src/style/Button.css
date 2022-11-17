@@ -1,0 +1,31 @@
+/*myColors*/
+button {
+  padding: 0.2%;
+  margin-right: 5%;
+  font-size: 14px;
+  cursor: pointer;
+  height: 30%;
+  border: none;
+  justify-self: end;
+  width: 12%;
+  color: rgba(122, 200, 204, 0.8705882353);
+  background-color: transparent;
+}
+button:hover .arrow {
+  border: solid rgba(122, 200, 204, 0.8705882353);
+  border-width: 0 4.5px 4.5px 0;
+  display: inline-block;
+  padding: 5px;
+  transform: rotate(-135deg);
+  transition: padding 350ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.14, 1.18);
+}
+button .arrow {
+  border: solid rgba(122, 200, 204, 0.8705882353);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  transition: padding 350ms;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.14, 1.18);
+}/*# sourceMappingURL=Button.css.map */

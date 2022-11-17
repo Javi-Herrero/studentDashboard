@@ -1,0 +1,64 @@
+@import'colors';
+
+@keyframes growAndFade {
+    0% {
+        opacity: 0.8;
+        transform: scaleY(0.5) scaleX(0.5);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scaleY(0.9)scaleX(0.95);
+    }
+}
+
+
+.mainBarGraphic {
+    grid-area: graphMain;
+    padding: 10px;
+    background-color: $widgetBackgound;
+
+
+    .loading {
+        position: relative;
+        text-align: center;
+        top: 40%;
+        animation: growAndFade;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(0, 0.54, 0.41, 0.85);
+        animation-fill-mode: forwards;
+    }
+
+    .chartAndCircles {
+        height: 70%;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas:
+            'circles chart chart chart ';
+
+        .mainChart {
+            .infoText {
+                color: $lightMarks;
+                position: absolute;
+                top: 275px;
+                left: 65%;
+                font-style: italic;
+                font-size: 14px;
+            }
+
+            grid-area: chart;
+            height: 95%;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .sideInfoMain {
+            grid-area: circles;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            align-items: start;
+            justify-content: center;
+        }
+    }
+}

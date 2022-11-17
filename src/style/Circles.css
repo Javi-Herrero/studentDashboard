@@ -1,0 +1,42 @@
+/*myColors*/
+@-webkit-keyframes rotateInFromLeft {
+  0% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+@keyframes rotateInFromLeft {
+  0% {
+    transform: rotateY(90deg);
+  }
+  100% {
+    transform: rotateY(0);
+  }
+}
+.circleUp,
+.circleDown {
+  -webkit-animation: 500ms ease-out 0s 1 rotateInFromLeft;
+          animation: 500ms ease-out 0s 1 rotateInFromLeft;
+  background-color: #0b2c40;
+  font-variant: small-caps;
+  color: #dae3d8;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.circleUp span:first-child,
+.circleDown span:first-child {
+  font-size: 2.5em;
+  margin-bottom: 0.015%;
+}
+.circleUp p,
+.circleDown p {
+  margin-top: 0;
+}/*# sourceMappingURL=circles.css.map */

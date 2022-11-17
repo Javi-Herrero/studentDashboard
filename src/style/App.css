@@ -1,0 +1,39 @@
+/*myColors*/
+html {
+  background-color: #0b2c40;
+}
+html ::-moz-selection {
+  background-color: #4da3a8;
+}
+html ::selection {
+  background-color: #4da3a8;
+}
+html a {
+  color: #d7a95f;
+}
+html a:visited {
+  color: #d7a95f;
+}
+
+.App {
+  scroll-behavior: smooth;
+  margin: 0;
+  color: #dae3d8;
+  background-color: #0b2c40;
+  height: auto;
+}
+.App .dataVisualisation {
+  margin-bottom: 5vh;
+  padding: 0 2vh 2vh 2vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 410px auto;
+  gap: 18px;
+  grid-template-areas: "header header " "graphMain graphMain " "graphStudent graphStudent";
+}
+.App .dataVisualisation hr {
+  border: 0.5px solid rgba(122, 200, 204, 0.8705882353);
+}
+.App .dataVisualisation .header {
+  grid-area: header;
+}/*# sourceMappingURL=App.css.map */
