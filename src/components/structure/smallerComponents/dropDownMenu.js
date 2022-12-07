@@ -9,7 +9,7 @@ const DropDown = () => {
 
     const handleEvent = (e) => {
         const { value } = e.target
-        if (value === 2) {
+        if (value === '2') {
             dispatch(setData([{ stateData: 'showStudentList', data: true }]))
         } else {
             dispatch(setData([{ stateData: 'showStudentList', data: false }, { stateData: 'selectedStudent', data: '' }]))
@@ -18,7 +18,7 @@ const DropDown = () => {
     const selectStudent = (e) => {
         const { value } = e.target
         if (value !== 'Select student') {
-            return dispatch(setData([{ stateData: 'selectedStudent', data: value }]))
+            dispatch(setData([{ stateData: 'selectedStudent', data: value }]))
 
         }
 

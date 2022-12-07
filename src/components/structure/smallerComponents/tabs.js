@@ -7,7 +7,7 @@ const Tabs = () => {
     const changeTab = (e) => {
         let kids = e.target.parentNode.children
         e.target.className === 'unselected' ? e.target.className = 'selected' : e.target.className = 'selected'
-        e.target.id === 1 ? kids[2].className = 'unselected' : kids[0].className = 'unselected'
+        e.target.id === '1' ? kids[2].className = 'unselected' : kids[0].className = 'unselected'
         dispatch(setData([{ stateData: 'selectedTab', data: e.target.innerHTML }]))
     }
     return (
