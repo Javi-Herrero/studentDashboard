@@ -14,7 +14,7 @@ const SecondarySection = (props) => {
     let title
     selectedAssignment.name !== undefined
         ? title = 'Assignment : ' + selectedAssignment.name
-        : title = 'select an assignment from the chart'
+        : null
 
     let names = []
     let funBar = []
@@ -33,7 +33,7 @@ const SecondarySection = (props) => {
     return (
         <div className={props.className}>
             <Title
-                title={'More info about: ' + `'${selectedAssignment.name}'`}
+                title={`More info about:  '${selectedAssignment.name}'`}
                 extras={<CloseButton />} />
             <div className='graphAndCircleContainer'>
                 <DistributionPieChart />
