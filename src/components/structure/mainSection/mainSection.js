@@ -11,7 +11,7 @@ const MainSection = (props) => {
     /// CALCULATE THE AVERAGE DIFFICULTY AND FUN OF ALL ASSIGNMENTS AND GATHER THE VALORATION OF THE SELECTED STUDENT, 
     //  THEN PASS IT AS data[]TO THE GRAPH
 
-    const { studentData, showStudentList, selectedStudent } = useSelector(state => state.dataManager)
+    const { studentData, selectedStudent } = useSelector(state => state.dataManager)
 
     let studentNames = Object.keys(studentData)
     let assignmentPerStudent = Object.values(studentData)

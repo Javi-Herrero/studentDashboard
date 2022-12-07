@@ -64,7 +64,7 @@ const App = () => {
             getUsers()
 
         }
-    }), [studentData])
+    }), [studentData, dispatch])
 
 
 
