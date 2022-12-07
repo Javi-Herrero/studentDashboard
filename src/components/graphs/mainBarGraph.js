@@ -1,6 +1,6 @@
 import React from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { Bar, BarChart, CartesianGrid, Cell, Label, LabelList, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
+import { Bar, BarChart, CartesianGrid, Cell, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
 import { setData } from '../../redux/dataManager'
 import colors from './colors'
 import objCalculator from './voteDistribution'

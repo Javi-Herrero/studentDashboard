@@ -37,7 +37,7 @@ const App = () => {
                 dispatch(setData([{ stateData: 'studentData', data: usableData }]))
             }
         })
-    }), [])
+    }), [dispatch])
 
 
     useEffect((() => {

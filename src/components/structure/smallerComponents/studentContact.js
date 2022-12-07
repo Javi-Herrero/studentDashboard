@@ -13,7 +13,7 @@ const StudentContact = () => {
         showInfo =
             <div className="studentInfoMain">
                 <div className="studentpic">
-                    <img src={pic}></img>
+                    <img src={pic} alt="student thumb"></img>
                     <br />
                     <h3>{selectedStudent}</h3> ({dob})
                     <br />

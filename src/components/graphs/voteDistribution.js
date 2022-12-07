@@ -19,7 +19,10 @@ const objCalculator = (arr, obj, props) => {
             case '5':
                 obj.difficulty.voted_5 = obj.difficulty.voted_5 + 1 * 100 / props.amountOfStudents
                 break;
+            default:
+                obj.difficulty.voted_1 = obj.difficulty.voted_1 + 1 * 100 / props.amountOfStudents
         }
+
         switch (element.fun) {
             case '1':
                 obj.fun.voted_1 = obj.fun.voted_1 + 1 * 100 / props.amountOfStudents
@@ -36,6 +39,7 @@ const objCalculator = (arr, obj, props) => {
             case '5':
                 obj.fun.voted_5 = obj.fun.voted_5 + 1 * 100 / props.amountOfStudents
                 break;
+            default: obj.fun.voted_1 = obj.fun.voted_1 + 1 * 100 / props.amountOfStudents
         }
     })
 }
