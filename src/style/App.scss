@@ -2,6 +2,7 @@
 
 html {
     background-color: $backgoundApp;
+    min-width: 960px;
 
     ::selection {
         background-color: $hippie-blue;
@@ -22,6 +23,7 @@ html {
     color: $text;
     background-color: $backgoundApp;
     height: auto;
+
 
 
     .dataVisualisation {

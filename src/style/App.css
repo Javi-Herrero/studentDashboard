@@ -1,6 +1,7 @@
 /*myColors*/
 html {
   background-color: #0b2c40;
+  min-width: 960px;
 }
 html ::-moz-selection {
   background-color: #4da3a8;
