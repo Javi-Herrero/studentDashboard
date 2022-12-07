@@ -12,9 +12,11 @@ import CloseButton from '../smallerComponents/closeButton'
 const SecondarySection = (props) => {
     const { selectedAssignment } = useSelector(state => state.dataManager)
     let title
-    selectedAssignment.name !== undefined
-        ? title = 'Assignment : ' + selectedAssignment.name
-        : null
+    if (selectedAssignment.name !== undefined) {
+
+        title = 'Assignment : ' + selectedAssignment.name
+    }
+
 
     let names = []
     let funBar = []
