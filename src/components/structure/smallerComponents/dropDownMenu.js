@@ -17,7 +17,11 @@ const DropDown = () => {
     }
     const selectStudent = (e) => {
         const { value } = e.target
-        value !== 'Select student' ? dispatch(setData([{ stateData: 'selectedStudent', data: value }])) : null
+        if (value !== 'Select student') {
+            return dispatch(setData([{ stateData: 'selectedStudent', data: value }]))
+
+        }
+
     }
     let studentNames = Object.keys(studentData)
     let options = []

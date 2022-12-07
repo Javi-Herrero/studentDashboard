@@ -11,6 +11,7 @@ const DistributionPieChart = () => {
     if (selectedAssignment.voteDistribution !== undefined) {
         for (const key in selectedAssignment.voteDistribution.fun) {
             let conditionalPercentageRender
+            // eslint-disable-next-line no-unused-expressions
             selectedAssignment.voteDistribution.fun[key] > 0 ? conditionalPercentageRender = `${selectedAssignment.voteDistribution.fun[key]}%` : null
             distributionFun.push({ name: key.replace('_', ' '), value: selectedAssignment.voteDistribution.fun[key], percentage: conditionalPercentageRender })
         }
@@ -18,6 +19,7 @@ const DistributionPieChart = () => {
     if (selectedAssignment.voteDistribution !== undefined) {
         for (const key in selectedAssignment.voteDistribution.difficulty) {
             let conditionalPercentageRender
+            // eslint-disable-next-line no-unused-expressions
             selectedAssignment.voteDistribution.difficulty[key] > 0 ? conditionalPercentageRender = `${selectedAssignment.voteDistribution.difficulty[key]}%` : null
             distributionDif.push({ name: key.replace('_', ' '), value: selectedAssignment.voteDistribution.difficulty[key], percentage: conditionalPercentageRender })
         }
