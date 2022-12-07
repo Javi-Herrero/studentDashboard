@@ -11,13 +11,6 @@ import CloseButton from '../smallerComponents/closeButton'
 
 const SecondarySection = (props) => {
     const { selectedAssignment } = useSelector(state => state.dataManager)
-    let title
-    if (selectedAssignment.name !== undefined) {
-        // eslint-disable-next-line no-unused-expressions
-        title = 'Assignment : ' + selectedAssignment.name
-    }
-
-
     let names = []
     let funBar = []
     let difBar = []
